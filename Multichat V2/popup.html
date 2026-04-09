@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="utf-8"></head>
+  <body style="width: 320px; padding: 10px; font-family: sans-serif;">
+    <h3>AI Debater</h3>
+    <textarea id="myPrompt" rows="4" style="width: 100%; box-sizing: border-box;" placeholder="Type your question here..."></textarea>
+
+    <!-- File upload section (new) -->
+    <div id="fileSection" style="margin: 8px 0;">
+      <label id="filePicker" style="display: inline-block; padding: 5px 10px; background: #e8e8e8; border-radius: 4px; cursor: pointer; font-size: 13px;">
+        📎 Attach files (max 10)
+        <input type="file" id="fileInput" multiple style="display: none;">
+      </label>
+      <span id="fileCount" style="font-size: 12px; color: #666; margin-left: 6px;"></span>
+      <a href="#" id="clearFiles" style="font-size: 12px; color: #c00; margin-left: 6px; display: none;">✕ clear</a>
+      <div id="fileList" style="font-size: 11px; color: #555; margin-top: 4px; max-height: 80px; overflow-y: auto;"></div>
+    </div>
+
+    <button id="sendAll" style="width: 100%; padding: 8px;">1. Send to All Tabs</button>
+    <hr>
+    <button id="swapDebate" style="width: 100%; padding: 8px;">2. Swap & Debate</button>
+    
+    <div id="status" style="font-size: 12px; color: #888; margin-top: 6px; min-height: 16px;"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
